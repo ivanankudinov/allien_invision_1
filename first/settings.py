@@ -23,6 +23,7 @@ class Settings:
 
         # Ускорение игры
         self.speed_up_scale = 1.1
+        self.score_scale = 1.5
 
         self.initialize_dynamic_settings()
 
@@ -37,4 +38,5 @@ class Settings:
         self.ship_speed *= self.speed_up_scale
         self.bullet_speed *= self.speed_up_scale
         self.alien_speed *= self.speed_up_scale
+        self.alien_points = int(self.alien_points * self.score_scale)
 
