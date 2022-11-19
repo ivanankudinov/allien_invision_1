@@ -31,6 +31,7 @@ class Settings:
         self.bullet_speed = 3
         self.alien_speed = 1
         self.fleet_direction = 1
+        self.alien_points = 1
 
     def increase_speed(self):
         self.ship_speed *= self.speed_up_scale
